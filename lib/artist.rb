@@ -41,9 +41,5 @@ class Artist
     puts @songs.collect {|song| song.name}
   end
 
-  def save
-    @@all << self
-  end
-
 
 end
