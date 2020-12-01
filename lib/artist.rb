@@ -10,6 +10,7 @@ class Artist
   end
 
   def self.all
+    @@all << self
     @@all
   end
 
@@ -40,6 +41,5 @@ class Artist
   def print_songs
     puts @songs.collect {|song| song.name}
   end
-
 
 end
